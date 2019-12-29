@@ -11,7 +11,7 @@ for c_file in src/t*.c
 do
     c_file_name=`echo $c_file | grep -Eo "t[0-9]+_\w+"`
     bin_file="bin/$c_file_name.bin"
-    COMMAND="$CC -pie -O3 -o $bin_file -I$LIB_PNG/include -L$LIB_PNG/lib $c_file -lpng"
+    COMMAND="$CC -pie -O3 -o $bin_file -I$LIB_PNG/include -L$LIB_PNG/lib $c_file -lpng -lm -lz"
     echo $COMMAND
     $COMMAND
     echo "----------------------------------------------------------------------"
