@@ -1,5 +1,6 @@
 # Ignore compressed files
 *.gz
+*.xz
 
 # This repository does not contain libpng's source code
 libpng-1.6.37/
